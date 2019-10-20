@@ -1,0 +1,9 @@
+-- lec 1
+anything that i can visualize, comes in the domain of image processing.
+rafael c. gonzalez and richard e. woods, digital image prosessing, 3rd edition, 2009 (available from local market)
+last slid will have the referances,
+chap: 1,2,3,4,9,10,11,...
+lab-8 open lab, lab-9 assignment-2, lab-13 assignment-3, lab-16 open lab, lab final
+specfication 35, coding standard 20, documentation 15, runtime output 15, efficiency 15.
+lab 33% , theory 66 %
+plo 1,2,3,5
