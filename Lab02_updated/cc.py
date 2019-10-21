@@ -1,0 +1,959 @@
+Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 07:18:10) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> import numpy
+>>> import numpy as np
+>>> import cv2
+>>> import os
+>>> cs.getcwd()
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    cs.getcwd()
+NameError: name 'cs' is not defined
+>>> os.getcwd()
+'C:\\Users\\Farhan\\AppData\\Local\\Programs\\Python\\Python36-32'
+>>> my_array = np.zeros((1,100))
+>>> my_array
+array([[ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,
+         0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,
+         0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,
+         0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,
+         0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,
+         0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,
+         0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,
+         0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.]])
+>>> np.shape(my_array)
+(1, 100)
+>>> os.chdir("E:\Drive\CEME Study\Semester6\Digital Image Processing EC-312\Lab\Lab2")
+>>> os.getcmd()
+Traceback (most recent call last):
+  File "<pyshell#10>", line 1, in <module>
+    os.getcmd()
+AttributeError: module 'os' has no attribute 'getcmd'
+>>> os.getcwd()
+'E:\\Drive\\CEME Study\\Semester6\\Digital Image Processing EC-312\\Lab\\Lab2'
+>>> my_image = cv2.imread("gradient.png",0)
+>>> my)image
+SyntaxError: invalid syntax
+>>> my_image
+array([[  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255],
+       ..., 
+       [  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255]], dtype=uint8)
+>>> cv2.imshow("Image 0",my_image)
+>>> np.shape(my_image)
+(1080, 1920)
+>>> my_image(2,2)
+Traceback (most recent call last):
+  File "<pyshell#17>", line 1, in <module>
+    my_image(2,2)
+TypeError: 'numpy.ndarray' object is not callable
+>>> array
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    array
+NameError: name 'array' is not defined
+>>> my_image
+array([[  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255],
+       ..., 
+       [  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255]], dtype=uint8)
+>>> my_image[1,1]
+0
+>>> my = my_image
+>>> my[0,0]
+0
+>>> row1=0
+>>> col1=0
+>>> [row2 col2] = np.shape(my)
+SyntaxError: invalid syntax
+>>> row2=1080
+>>> col2 =1920
+>>> midr = row2/2
+>>> midc = col2/2
+>>> while midr>0
+SyntaxError: invalid syntax
+>>> while midr>0:
+	midr = midr-1
+	while midc>0
+	
+SyntaxError: invalid syntax
+>>> while midr>0:
+	midr = midr-1
+	while midc>0:
+		my[row2,col2] = my[row1,col1]
+		row1 = row1+1
+		row2 = row2-1
+		col1 = col1+1
+		col2 = col2-1
+
+		
+Traceback (most recent call last):
+  File "<pyshell#40>", line 4, in <module>
+    my[row2,col2] = my[row1,col1]
+IndexError: index 1080 is out of bounds for axis 0 with size 1080
+>>> row2=1920
+>>> col2=1080
+>>> midr = row2/2
+>>> midc = col2/2
+>>> while midr>0:
+	midr = midr-1
+	while midc>0:
+		my[row2,col2] = my[row1,col1]
+		row1 = row1+1
+		row2 = row2-1
+		col1 = col1+1
+		col2 = col2-1
+
+		
+Traceback (most recent call last):
+  File "<pyshell#46>", line 4, in <module>
+    my[row2,col2] = my[row1,col1]
+IndexError: index 1920 is out of bounds for axis 0 with size 1080
+>>> while midr>0:
+	midr = midr-1
+	while midc>0:
+		midc = midc-1
+		my[row2,col2] = my[row1,col1]
+		row1 = row1+1
+		row2 = row2-1
+		col1 = col1+1
+		col2 = col2-1
+
+		
+Traceback (most recent call last):
+  File "<pyshell#48>", line 5, in <module>
+    my[row2,col2] = my[row1,col1]
+IndexError: index 1920 is out of bounds for axis 0 with size 1080
+>>> while midr>0:
+	midr = midr-1
+	while midc>0:
+		midc = midc-1
+		my[col2,row2] = my[col1,row1]
+		row1 = row1+1
+		row2 = row2-1
+		col1 = col1+1
+		col2 = col2-1
+
+		
+Traceback (most recent call last):
+  File "<pyshell#50>", line 5, in <module>
+    my[col2,row2] = my[col1,row1]
+IndexError: index 1080 is out of bounds for axis 0 with size 1080
+>>> while midr>0:
+	midr = midr-1
+	midc = 540
+	while midc>0:
+		midc = midc-1
+		my[col2,row2] = my[col1,row1]
+		row1 = row1+1
+		row2 = row2-1
+		col1 = col1+1
+		col2 = col2-1
+
+		
+Traceback (most recent call last):
+  File "<pyshell#52>", line 6, in <module>
+    my[col2,row2] = my[col1,row1]
+IndexError: index 1080 is out of bounds for axis 0 with size 1080
+>>> my[1079,1919]
+255
+>>> my[1080,1920]
+Traceback (most recent call last):
+  File "<pyshell#57>", line 1, in <module>
+    my[1080,1920]
+IndexError: index 1080 is out of bounds for axis 0 with size 1080
+>>> rows = 1080
+>>> cols = 1920
+>>> {
+	i=0
+	
+SyntaxError: invalid syntax
+>>> i=0
+>>> j=0
+>>> while i<rows
+SyntaxError: invalid syntax
+>>> k = 1080
+>>> my2 = my
+>>> while i<rows/2:
+	j=0
+	while j<cols/2:
+		my2[k,j] = my[i,j]
+
+		
+Traceback (most recent call last):
+  File "<pyshell#72>", line 4, in <module>
+    my2[k,j] = my[i,j]
+IndexError: index 1080 is out of bounds for axis 0 with size 1080
+>>> while i<rows/2:
+	j=0
+	while j<cols/2:
+		my2[k,j] = my[i,j]
+	k = k-1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#75>", line 4, in <module>
+    my2[k,j] = my[i,j]
+IndexError: index 1080 is out of bounds for axis 0 with size 1080
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols/2:
+		my2[k,j] = my[i,j]
+
+		
+Traceback (most recent call last):
+  File "<pyshell#77>", line 5, in <module>
+    my2[k,j] = my[i,j]
+KeyboardInterrupt
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols/2:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("Task1",my2)
+>>> cv2.imwrite("my2.jpg",my2)
+True
+>>> my = cv2.imread("gradient1.png",0)
+>>> my
+array([[  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255],
+       ..., 
+       [  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255],
+       [  0,   0,   0, ..., 255, 255, 255]], dtype=uint8)
+>>> cv2.imshow("Image 0",my)
+>>> np.shape(my)
+(1080, 1920)
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols/2:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imwrite("my2.jpg",my2)
+True
+>>> cv2.imwrite("my22.jpg",my2)
+True
+>>> k
+539
+>>> i
+540
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols/2:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imwrite("my22.jpg",my2)
+True
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imwrite("my22.jpg",my2)
+True
+>>> my2 = my
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#105>", line 5, in <module>
+    my2[k,j] = my[i,j]
+IndexError: index -1081 is out of bounds for axis 0 with size 1080
+>>> k=1080/2
+>>> my2 = my
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#110>", line 5, in <module>
+    my2[k,j] = my[i,j]
+IndexError: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+>>> k=1080/2
+>>> my2 = my
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols/2:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+	
+SyntaxError: multiple statements found while compiling a single statement
+>>> 
+>>> k=1080/2
+>>> my2 = my
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols/2:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#117>", line 5, in <module>
+    my2[k,j] = my[i,j]
+IndexError: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+>>> k
+539.0
+>>> k=540
+>>> my2 = my
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imwrite("my22.jpg",my2)
+True
+>>> cols
+1920
+>>> i
+540
+>>> i=0
+>>> k=1080
+>>> my2 = my
+>>>  while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+	
+SyntaxError: unexpected indent
+>>> 
+>>>  while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+	
+SyntaxError: unexpected indent
+>>>  while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+	
+SyntaxError: unexpected indent
+>>>  while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+	
+SyntaxError: unexpected indent
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imwrite("my22.jpg",my2)
+True
+>>> my = cv2.imread("gradient1.png",0)
+>>> k=1080
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imwrite("my22.jpg",my2)
+True
+>>> cv2.imwrite("my22.jpg",my)
+True
+>>> cv2.imshow("sdf",my2)
+>>> k
+540
+>>> k = 1080
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imwrite("my22.jpg",my2)
+True
+>>> cv2.imwrite("gtadient1.jpg",my)
+True
+>>> k = 1080
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> my = cv2.imread("gradient1.png",0)
+>>> k=1080
+>>> i=0
+>>> while i<rows/2:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imwrite("my22.jpg",my2)
+True
+>>> rows
+1080
+>>> cols
+1920
+>>> k=1080
+>>> i=0
+>>> while i<540:
+	j=0
+	k = k-1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imwrite("my22.jpg",my2)
+True
+>>> k=1080
+>>> i=0
+>>> while i<540:
+	j=0
+	k = k-1
+	i = i+1
+	while j<cols:
+		my2[k,j] = my[i,j]
+		j=j+1
+
+		
+>>> cv2.imwrite("my22.jpg",my2)
+True
+>>> my3 = my
+>>> k=1080
+>>> i=0
+>>> while i<540:
+	j=0
+	k = k-1
+	i = i+1
+	while j<cols:
+		my3[k,j] = my[i,j]
+		j=j+1
+
+		
+>>> cv2.imwrite("my22.jpg",my3)
+True
+>>> b = 4
+>>> w = 500
+>>> i = 0
+>>> while i<b+b+w:
+	my[i,i]=255
+	if i<5 | i>b+w:
+		my[i,i]=0
+
+		
+Traceback (most recent call last):
+  File "<pyshell#187>", line 3, in <module>
+    if i<5 | i>b+w:
+KeyboardInterrupt
+>>> i=0
+>>> while i<b+b+w:
+	my[i,i]=255
+	if i<5 | i>b+w:
+		my[i,i]=0
+	i=i+1
+
+	
+>>> cv2.imshow("sfsf",my)
+>>> my=0
+>>> i=0
+>>> while i<b+b+w:
+	my[i,i]=255
+	if i<5 | i>b+w:
+		my[i,i]=0
+	i=i+1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#196>", line 2, in <module>
+    my[i,i]=255
+TypeError: 'int' object does not support item assignment
+>>> while i<b+b+w:
+	mm[i,i]=255
+	if i<5 | i>b+w:
+		my[i,i]=0
+	i=i+1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#198>", line 2, in <module>
+    mm[i,i]=255
+NameError: name 'mm' is not defined
+>>> mm = 0:b+b+w;b+b+w
+SyntaxError: invalid syntax
+>>> mm = np.zeros((b+b+w,b+b+w))
+>>> i=0
+>>> while i<b+b+w:
+	mm[i,i]=255
+	if i<5 | i>b+w:
+		my[i,i]=0
+	i=i+1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#203>", line 4, in <module>
+    my[i,i]=0
+TypeError: 'int' object does not support item assignment
+>>> while i<b+b+w:
+	mm[i,i]=255
+	if i<5 | i>b+w:
+		my[i,i]=0
+	i=i+1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#205>", line 4, in <module>
+    my[i,i]=0
+TypeError: 'int' object does not support item assignment
+>>> mm
+array([[ 255.,    0.,    0., ...,    0.,    0.,    0.],
+       [   0.,  255.,    0., ...,    0.,    0.,    0.],
+       [   0.,    0.,  255., ...,    0.,    0.,    0.],
+       ..., 
+       [   0.,    0.,    0., ...,    0.,    0.,    0.],
+       [   0.,    0.,    0., ...,    0.,    0.,    0.],
+       [   0.,    0.,    0., ...,    0.,    0.,    0.]])
+>>> while i<b+b+w:
+	mm[i,i]=255
+	if i<5 | i>b+w:
+		my[i,i]=1
+	i=i+1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#208>", line 4, in <module>
+    my[i,i]=1
+TypeError: 'int' object does not support item assignment
+>>> 
+KeyboardInterrupt
+>>> while i<b+b+w:
+	mm[i,i]=255
+	if i<5 | i>b+w:
+		my[i,i]=0
+	i=i+1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#210>", line 4, in <module>
+    my[i,i]=0
+TypeError: 'int' object does not support item assignment
+>>> while i<b+b+w:
+	mm[i,i]=255
+	if i<5 | i>b+w:
+		mm[i,i]=0
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 | i>b+w:
+		mm[i,j]=0
+	i=i+1
+	
+SyntaxError: expected an indented block
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 | i>b+w:
+		mm[i,j]=0
+		j=j+1
+	i=i+1
+	
+SyntaxError: expected an indented block
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5&j<5 | i>b+w & j>b+w:
+		mm[i,j]=0
+		j=j+1
+	i=i+1
+	
+SyntaxError: expected an indented block
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 | i>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5&j<5 | i>b+w & j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> mm = np.zeros((b+b+w,b+b+w))
+>>> cv2.imshow("sdf",mm)
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 && j<5 || i>b+w && j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+	
+SyntaxError: invalid syntax
+>>> 
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 & j<5 || i>b+w & j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+	
+SyntaxError: invalid syntax
+>>> 
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 & j<5 | i>b+w & j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 & j<5 | i>b+w & j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 | j<5 | i>b+w | j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> i=0
+>>> mm = np.zeros((b+b+w,b+b+w))
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 | j<5 | i>b+w | j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> r
+Traceback (most recent call last):
+  File "<pyshell#252>", line 1, in <module>
+    r
+NameError: name 'r' is not defined
+>>> b
+4
+>>> w
+500
+>>> b=50
+>>> w
+500
+>>> 50
+50
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 | j<5 | i>b+w | j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+Traceback (most recent call last):
+  File "<pyshell#260>", line 4, in <module>
+    mm[i,j]=255
+IndexError: index 508 is out of bounds for axis 1 with size 508
+>>> mm = np.zeros((b+b+w,b+b+w))
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255
+		if i<5 | j<5 | i>b+w | j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> mm = np.zeros((b+b+w,b+b+w))
+>>> cv2.imshow("sdf",mm)
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255 
+		if i<5:
+			mm[i,j]=0
+		if j<5:
+			mm[i,j]=0
+		if i>b+w:
+			mm[i,j]=0
+		if j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255 
+		if i<b:
+			mm[i,j]=0
+		if j<b:
+			mm[i,j]=0
+		if i>b+w:
+			mm[i,j]=0
+		if j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> cv2.imwrite("mm2.jpg",my2)
+True
+>>> b=500
+>>> w=500
+>>> mm = np.zeros((b+b+w,b+b+w))
+>>> i=0
+>>> while i<b+b+w:
+	j=0
+	while j<b+b+w:
+		mm[i,j]=255 
+		if i<b:
+			mm[i,j]=0
+		if j<b:
+			mm[i,j]=0
+		if i>b+w:
+			mm[i,j]=0
+		if j>b+w:
+			mm[i,j]=0
+		j=j+1
+	i=i+1
+
+	
+>>> cv2.imshow("sdf",mm)
+>>> cv2.imwrite("m.jpg",my2)
+True
+>>> cv2.imshow("sdf",my)
+>>> my=my_image
+>>> cv2.imshow("sdf",my)
+>>> my = cv2.imread("gradient1.png",0)
+>>> cv2.imshow("sdf",my)
+>>> my3 = my
+>>> k=1080
+>>> i=0
+>>> while i<1080:
+	j=0
+	k = k-1
+	i = i+1
+	while j<cols:
+		my3[k,j] = my[i,j]
+		j=j+1
+
+		
+Traceback (most recent call last):
+  File "<pyshell#294>", line 6, in <module>
+    my3[k,j] = my[i,j]
+IndexError: index 1080 is out of bounds for axis 0 with size 1080
+>>> k=1080
+>>> i=0
+>>> while i<1080:
+	j=0
+	k = k-1
+	while j<cols:
+		my3[k,j] = my[i,j]
+		j=j+1
+	i = i+1
+
+	
+>>> cv2.imshow("sdf",my3)
+>>> cv2.imshow("sdf",my)
+>>> cv2.imwrite("flip.jpg",my2)
+True
+>>> cv2.imshow("sdf",my)
+>>> my = cv2.imread("gradient1.png",0)
+>>> cv2.imshow("sdf",my)
+>>> k=1080
+>>> i=-1
+>>> while i<1080:
+	j=0
+	k = k-1
+	i = i+1
+	while j<cols:
+		my3[k,j] = my[i,j]
+		j=j+1
+
+		
+Traceback (most recent call last):
+  File "<pyshell#309>", line 6, in <module>
+    my3[k,j] = my[i,j]
+IndexError: index 1080 is out of bounds for axis 0 with size 1080
+
+>>> my3 = my
+>>> k=1080
+>>> i=0
+>>> while i<1080-1:
+	j=0
+	k = k-1
+	i = i+1
+	while j<cols:
+		my3[k,j] = my[i,j]
+		j=j+1
+
+		
+>>> os.chdir("E:\Drive\CEME Study\Semester 6\Digital Image Processing EC-312\Lab\Lab2(8-3-17)")
+>>> cv2.imwrite("flip.jpg",my2)
+True
+>>> my = cv2.imread("gradient1.png",0)
+>>> k=1080
+>>> i=0
+>>> while i<1080-1:
+	j=0
+	k = k-1
+	i = i+1
+	while j<cols:
+		my3[k,j] = my[i,j]
+		j=j+1
+
+		
+>>> cv2.imwrite("flip.jpg",my2)
+True
+>>> cv2.imwrite("flip.jpg",my3)
+True
+>>> def fuu(a=5,b=6,c=4):
+
+
+	a=b+c
+
+	
+>>> fuu()
+>>> a
+Traceback (most recent call last):
+  File "<pyshell#330>", line 1, in <module>
+    a
+NameError: name 'a' is not defined
+>>> 
